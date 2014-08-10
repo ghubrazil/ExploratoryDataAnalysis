@@ -1,4 +1,4 @@
-## Getting full dataset
+## Getting the data
 data_all <- read.csv("./Data/household_power_consumption.txt", header=T, sep=';', na.strings="?", 
                       nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
 data_all$Date <- as.Date(data_all$Date, format="%d/%m/%Y")
